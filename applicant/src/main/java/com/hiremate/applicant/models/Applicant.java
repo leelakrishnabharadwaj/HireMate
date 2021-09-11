@@ -11,39 +11,20 @@ public class Applicant {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long Id;
-	private String Username;
-	private String FirstName;
-	private String MiddleName;
-	private String LastName;
-	private String EmailId;
-	private String MobileNumber;
-	private String Address;
-	private String City;
-	private String District;
-	private String State;
-	private String PosetalCode;
-	private String Country;
+	private String userName;
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private String emailId;
+	private String mobileNumber;
+	private String address;
+	private String city;
+	private String district;
+	private String state;
+	private String postalCode;
+	private String country;
 
 	public Applicant() {
-	}
-
-	public Applicant(Long id, String username, String firstName, String middleName, String lastName, String emailId,
-			String mobileNumber, String address, String city, String district, String state, String posetalCode,
-			String country) {
-		super();
-		Id = id;
-		Username = username;
-		FirstName = firstName;
-		MiddleName = middleName;
-		LastName = lastName;
-		EmailId = emailId;
-		MobileNumber = mobileNumber;
-		Address = address;
-		City = city;
-		District = district;
-		State = state;
-		PosetalCode = posetalCode;
-		Country = country;
 	}
 
 	public Long getId() {
@@ -54,108 +35,108 @@ public class Applicant {
 		Id = id;
 	}
 
-	public String getUsername() {
-		return Username;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setUsername(String username) {
-		Username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getFirstName() {
-		return FirstName;
+		return firstName;
 	}
 
 	public void setFirstName(String firstName) {
-		FirstName = firstName;
+		this.firstName = firstName;
 	}
 
 	public String getMiddleName() {
-		return MiddleName;
+		return middleName;
 	}
 
 	public void setMiddleName(String middleName) {
-		MiddleName = middleName;
+		this.middleName = middleName;
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.lastName = lastName;
 	}
 
 	public String getEmailId() {
-		return EmailId;
+		return emailId;
 	}
 
 	public void setEmailId(String emailId) {
-		EmailId = emailId;
+		this.emailId = emailId;
 	}
 
 	public String getMobileNumber() {
-		return MobileNumber;
+		return mobileNumber;
 	}
 
 	public void setMobileNumber(String mobileNumber) {
-		MobileNumber = mobileNumber;
+		this.mobileNumber = mobileNumber;
 	}
 
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
 
 	public String getCity() {
-		return City;
+		return city;
 	}
 
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
 
 	public String getDistrict() {
-		return District;
+		return district;
 	}
 
 	public void setDistrict(String district) {
-		District = district;
+		this.district = district;
 	}
 
 	public String getState() {
-		return State;
+		return state;
 	}
 
 	public void setState(String state) {
-		State = state;
+		this.state = state;
 	}
 
-	public String getPosetalCode() {
-		return PosetalCode;
+	public String getPostalCode() {
+		return postalCode;
 	}
 
-	public void setPosetalCode(String posetalCode) {
-		PosetalCode = posetalCode;
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
 	}
 
 	public String getCountry() {
-		return Country;
+		return country;
 	}
 
 	public void setCountry(String country) {
-		Country = country;
+		this.country = country;
 	}
 
 	@Override
 	public String toString() {
-		return "Applicant [Id=" + Id + ", Username=" + Username + ", FirstName=" + FirstName + ", MiddleName="
-				+ MiddleName + ", LastName=" + LastName + ", EmailId=" + EmailId + ", MobileNumber=" + MobileNumber
-				+ ", Address=" + Address + ", City=" + City + ", District=" + District + ", State=" + State
-				+ ", PosetalCode=" + PosetalCode + ", Country=" + Country + "]";
+		return "Applicant [Id=" + Id + ", userName=" + userName + ", firstName=" + firstName + ", middleName="
+				+ middleName + ", lastName=" + lastName + ", emailId=" + emailId + ", mobileNumber=" + mobileNumber
+				+ ", address=" + address + ", city=" + city + ", district=" + district + ", state=" + state
+				+ ", postalCode=" + postalCode + ", country=" + country + "]";
 	}
 
 }
